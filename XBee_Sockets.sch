@@ -15,9 +15,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 74lvc244:74lvc244 U4
+L SAM21-rescue:74lvc244-74lvc244 U4
 U 1 1 5D539CF4
 P 3250 2100
+AR Path="/5D539CF4" Ref="U4"  Part="1" 
+AR Path="/5D5386B1/5D539CF4" Ref="U4"  Part="1" 
 F 0 "U4" H 3250 2865 50  0000 C CNN
 F 1 "74lvc244" H 3250 2774 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3250 2100 50  0001 C CNN
@@ -70,15 +72,15 @@ XB1_VCC
 Wire Wire Line
 	1250 1550 1350 1550
 Text GLabel 1250 1850 0    50   Input ~ 0
-D23_CS_XB11.5
+D23_CS_XB12.2A
 Wire Wire Line
 	1250 1850 1650 1850
 Wire Wire Line
 	1650 1850 1650 1750
 Text GLabel 2500 1700 0    50   Input ~ 0
-D19_MOSI1.5B
+D19_MOSI2.2A
 Text GLabel 2500 2000 0    50   Input ~ 0
-D20_SCK1.5B
+D20_SCK2.2A
 Text GLabel 2500 2300 0    50   Input ~ 0
 XB1_MISO
 Text GLabel 4050 1550 2    50   Input ~ 0
@@ -88,7 +90,7 @@ XB1_MOSI
 Text GLabel 4050 2150 2    50   Input ~ 0
 XB1_SCK
 Text GLabel 4050 2450 2    50   Input ~ 0
-D21_MISO1.5B
+D21_MISO2.2A
 Wire Wire Line
 	4050 2450 3850 2450
 Wire Wire Line
@@ -156,7 +158,7 @@ XB2_VCC
 Wire Wire Line
 	5600 1100 5500 1100
 Text GLabel 5600 800  2    50   Input ~ 0
-D28_CS_XB21.5
+D28_CS_XB22.2C
 Wire Wire Line
 	5600 800  5200 800 
 Wire Wire Line
@@ -208,11 +210,11 @@ Wire Wire Line
 Wire Wire Line
 	5200 1400 5200 1700
 Text GLabel 4050 2000 2    50   Input ~ 0
-D20_SCK1.5B
+D20_SCK2.2A
 Wire Wire Line
 	4050 2000 3850 2000
 Text GLabel 4050 2300 2    50   Input ~ 0
-D19_MOSI1.5B
+D19_MOSI2.2A
 Wire Wire Line
 	4050 2300 3850 2300
 Text GLabel 4050 2600 2    50   Input ~ 0
@@ -232,7 +234,7 @@ Wire Wire Line
 Text GLabel 2500 2150 0    50   Input ~ 0
 XB2_MOSI
 Text GLabel 2500 2450 0    50   Input ~ 0
-XB2_MISO
+D21_MISO2.3A
 Wire Wire Line
 	2500 2450 2650 2450
 $Comp
@@ -345,7 +347,7 @@ XB1_MOSI
 Wire Wire Line
 	4950 5550 4850 5550
 Text GLabel 4950 5550 2    50   Input ~ 0
-D24_INT_XB11.5B
+D24_INT_XB12.4B
 Wire Wire Line
 	4550 5550 4250 5550
 $Comp
@@ -439,15 +441,15 @@ $EndComp
 Text GLabel 1550 5050 0    50   Input ~ 0
 XB1_MISO
 Text GLabel 1550 4950 0    50   Input ~ 0
-D25_TX_XB11.5C
+D25_TX_XB12.2B
 Text GLabel 1550 4850 0    50   Input ~ 0
-D26_RX_XB11.5C
+D26_RX_XB12.2B
 Wire Wire Line
 	1550 4750 2650 4750
 Text GLabel 1550 4750 0    50   Input ~ 0
 XB1_VCC
 $Comp
-L XBEE:XBEE U5
+L SAM21-rescue:XBEE-XBEE U5
 U 1 1 5D566A6B
 P 3500 5150
 F 0 "U5" H 3450 5815 50  0000 C CNN
@@ -464,7 +466,7 @@ XB2_MOSI
 Wire Wire Line
 	10450 5500 10350 5500
 Text GLabel 10450 5500 2    50   Input ~ 0
-D29_INT_XB21.5B
+D29_INT_XB22.4D
 Wire Wire Line
 	10050 5500 9750 5500
 $Comp
@@ -558,15 +560,15 @@ $EndComp
 Text GLabel 7050 5000 0    50   Input ~ 0
 XB2_MISO
 Text GLabel 7050 4900 0    50   Input ~ 0
-D30_TX_XB21.5B
+D30_TX_XB22.2C
 Text GLabel 7050 4800 0    50   Input ~ 0
-D31_RX_XB21.5B
+D31_RX_XB22.2C
 Wire Wire Line
 	7050 4700 8150 4700
 Text GLabel 7050 4700 0    50   Input ~ 0
 XB2_VCC
 $Comp
-L XBEE:XBEE U7
+L SAM21-rescue:XBEE-XBEE U7
 U 1 1 5D5AD446
 P 9000 5100
 F 0 "U7" H 8950 5765 50  0000 C CNN
@@ -654,7 +656,7 @@ Wire Wire Line
 Wire Wire Line
 	8800 1350 9050 1350
 Text GLabel 8650 1350 0    50   Input ~ 0
-D22_XB1_PWR1.5C
+D22_XB1_PWR2.5A
 Wire Wire Line
 	8650 1350 8800 1350
 Connection ~ 8800 1350
@@ -773,7 +775,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 2700 6550 2700
 Text GLabel 6150 2700 0    50   Input ~ 0
-D27_XB2_PWR1.5C
+D27_XB2_PWR2.5B
 Wire Wire Line
 	6150 2700 6300 2700
 Connection ~ 6300 2700
@@ -923,7 +925,7 @@ Wire Wire Line
 Wire Wire Line
 	6550 7350 6550 7150
 $Comp
-L DMP1045U:DMP1045U D20
+L SAM21-rescue:DMP1045U-DMP1045U D20
 U 1 1 5D4CF314
 P 9350 1450
 F 0 "D20" H 9502 1496 50  0000 L CNN
@@ -939,7 +941,7 @@ F 8 "Diodes Inc." H 9350 1450 50  0001 L BNN "Field8"
 	1    0    0    1   
 $EndComp
 $Comp
-L DMP1045U:DMP1045U D21
+L SAM21-rescue:DMP1045U-DMP1045U D21
 U 1 1 5D4EC4FC
 P 6850 2800
 F 0 "D21" H 7002 2846 50  0000 L CNN
