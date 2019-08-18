@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name SAM21-rescue)(type Legacy)(uri ${KIPRJMOD}/SAM21-rescue.lib)(options "")(descr ""))
+)
