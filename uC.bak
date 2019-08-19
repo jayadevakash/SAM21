@@ -1105,4 +1105,9 @@ $EndComp
 Wire Wire Line
 	10500 1200 10500 1250
 Connection ~ 10500 1250
+Wire Wire Line
+	7350 5050 7500 5050
+Wire Wire Line
+	7500 5050 7500 5150
+Connection ~ 7500 5150
 $EndSCHEMATC
